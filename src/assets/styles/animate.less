@@ -1,0 +1,69 @@
+// 动画
+
+.cube {
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0,0,0);
+}
+
+.fade-enter-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slider-enter-active {
+  transition: all 0.3s cubic-bezier(.55, 0, .1, 1);
+}
+
+.slider-leave-active {
+  transition: all 0.3s cubic-bezier(.55, 0, .1, 1);
+}
+
+.slider-enter,
+.slider-leave-to {
+  transform: translateY(100%);
+}
+
+.list-complete-item {
+  transition: all 0.5s;
+}
+
+.list-complete-enter,
+.list-complete-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.list-complete-leave-active {
+  position: absolute;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.3s cubic-bezier(.55, 0, .1, 1);
+}
+
+.slide-up-enter,
+.slide-up-leave-to {
+  transform: translate(-50%, -100%) !important;
+  opacity: 0;
+}
+
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.3s cubic-bezier(.55, 0, .1, 1);
+}
+
+.scale-enter,
+.scale-leave-to {
+  transform: scale(1.5);
+  opacity: 0;
+}
